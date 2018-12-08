@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use App\Views\Composers\NavigationComposer;
+use App\Views\Composers\NavCatComposer;
 
 class ComposerServiceProvider extends ServiceProvider
 {
@@ -14,7 +15,8 @@ class ComposerServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        view()->composer('layouts.sidebar', NavigationComposer::class);        
+        view()->composer('layouts.main', NavCatComposer::class);
+        view()->composer('layouts.sidebar', NavigationComposer::class);
     }
 
     /**

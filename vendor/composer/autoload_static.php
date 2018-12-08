@@ -446,6 +446,7 @@ class ComposerStaticInit79bc52fe372c278ea5673651580a14be
         'App\\Role' => __DIR__ . '/../..' . '/app/Role.php',
         'App\\Tag' => __DIR__ . '/../..' . '/app/Tag.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
+        'App\\Views\\Composers\\NavCatComposer' => __DIR__ . '/../..' . '/app/Views/Composers/NavCatComposer.php',
         'App\\Views\\Composers\\NavigationComposer' => __DIR__ . '/../..' . '/app/Views/Composers/NavigationComposer.php',
         'Barryvdh\\Debugbar\\Console\\ClearCommand' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/Console/ClearCommand.php',
         'Barryvdh\\Debugbar\\Controllers\\AssetController' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/Controllers/AssetController.php',

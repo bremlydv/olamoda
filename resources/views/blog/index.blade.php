@@ -2,6 +2,10 @@
 
 @section('content')
 
+    @if(isset($displayHeroes))
+        @include('blog.showHeroes')
+    @endif
+
     <div class="container">
         <div class="row">
             <div class="col-md-8">

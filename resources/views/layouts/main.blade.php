@@ -2,62 +2,89 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>OLAMODA | Fashion Blog</title>
 
+    <link rel="icon" href="{{ URL::asset('icons/logo.png') }}">
+
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
-    <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('css/bootstrap4.1.min.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('css/blog.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('css/custom.css') }}">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-default navbar-fixed-top">
-          <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#the-navbar-collapse" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">MyBlog</a>
-            </div>
+    <div class="container">
+      <header class="blog-header py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          <div class="col-4 pt-1">
+            <!-- <a class="text-muted" href="#">Subscribe</a> -->
+          </div>
+          <div class="col-4 text-center">
+            <a class="blog-header-logo text-dark" href="{{ route('blog') }}">OLAMODA</a>
+          </div>
+          <div class="col-4 d-flex justify-content-end align-items-center">
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="the-navbar-collapse">
-              <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="{{ route('blog') }}">Blog</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container -->
+                <form action="{{ route('blog') }}">
+                    <div class="input-group">
+                      <input type="text" class="form-control input-lg" value="{{ request('term') }}" name="term" placeholder="Search for...">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default" type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                      </span>
+                    </div>
+                </form>
+
+          </div>
+        </div>
+      </header>
+
+      <div class="nav-scroller py-1 mb-2">
+        <nav class="nav d-flex justify-content-between">
+        @foreach ($categories as $category)
+
+            @if($category->id != 1)
+            <a href="{{ route('category', $category->slug) }}" class="p-2 text-muted">{{ $category->title }}</a>
+            @endif
+        @endforeach
         </nav>
-    </header>
+      </div>
+    </div>
 
     @yield('content')
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <p class="copyright">&copy; 2016 Edo Masaru</p>
-                </div>
-                <div class="col-md-4">
-                    <nav>
-                        <ul class="social-icons">
-                            <li><a href="#" class="i fa fa-facebook"></a></li>
-                            <li><a href="#" class="i fa fa-twitter"></a></li>
-                            <li><a href="#" class="i fa fa-google-plus"></a></li>
-                            <li><a href="#" class="i fa fa-github"></a></li>
-                        </ul>
-                    </nav>
-                </div>
+    <footer class="">
+        <div class="container d-flex justify-content-between">
+            <div class="">
+                <p class="copyright text-center">&copy; 2018 OLAMODA</p>
+            </div>
+            <div class="">
+                <nav>
+                    <ul class="social-icons">
+                        <li><a href="#" class="i fa fa-facebook"></a></li>
+                        <li><a href="#" class="i fa fa-twitter"></a></li>
+                        <li><a href="#" class="i fa fa-google-plus"></a></li>
+                        <li><a href="#" class="i fa fa-github"></a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script>window.jQuery || document.write('<script src="/js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+    <script src="/js/popper.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/holder.min.js"></script>
+    <script>
+      Holder.addTheme('thumb', {
+        bg: '#55595c',
+        fg: '#eceeef',
+        text: 'Thumbnail'
+      });
+    </script>
 </body>
 </html>

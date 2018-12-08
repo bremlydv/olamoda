@@ -54,6 +54,7 @@ return array(
     'App\\Role' => $baseDir . '/app/Role.php',
     'App\\Tag' => $baseDir . '/app/Tag.php',
     'App\\User' => $baseDir . '/app/User.php',
+    'App\\Views\\Composers\\NavCatComposer' => $baseDir . '/app/Views/Composers/NavCatComposer.php',
     'App\\Views\\Composers\\NavigationComposer' => $baseDir . '/app/Views/Composers/NavigationComposer.php',
     'Barryvdh\\Debugbar\\Console\\ClearCommand' => $vendorDir . '/barryvdh/laravel-debugbar/src/Console/ClearCommand.php',
     'Barryvdh\\Debugbar\\Controllers\\AssetController' => $vendorDir . '/barryvdh/laravel-debugbar/src/Controllers/AssetController.php',

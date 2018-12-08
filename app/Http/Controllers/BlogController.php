@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+
+use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Post;
@@ -21,7 +23,15 @@ class BlogController extends Controller
                     ->filter(request()->only(['term', 'year', 'month']))
                     ->simplePaginate($this->limit);
 
-        return view("blog.index", compact('posts'));
+        //if (Route::currentRouteName()->uri() == '/'){
+        $name = Route::currentRouteName();
+        if($name == '/'){
+          $displayHeroes = false;
+        } else {
+          $displayHeroes = true;
+        }
+
+        return view("blog.index", compact('posts','displayHeroes'));
     }
 
     public function category(Category $category)
@@ -39,7 +49,7 @@ class BlogController extends Controller
 
     public function tag(Tag $tag)
     {
-        $tagName = $tag->title;
+        $tagName = $tag->name;
 
         $posts = $tag->posts()
                           ->with('author', 'category', 'comments')
