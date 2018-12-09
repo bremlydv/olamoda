@@ -6,7 +6,7 @@
   <section class="p-3 p-md-5 rounded mb-4 d-none d-md-block" style="position: relative;overflow:hidden; height: 600px;">
       <div class="video-container">
           <video class="bg-video" autoplay muted loop>
-        <source src="{{ asset('videos/hero.mp4') }}" type="video/mp4">
+        <source src="{{ asset('video/hero.mp4') }}" type="video/mp4">
         Your browser is not supported
           </video>
        </div>
