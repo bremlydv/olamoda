@@ -1,43 +1,41 @@
 
 <div class="container">
-  <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
-    <div class="col-md-6 px-0">
-      <h1 class="display-4 font-italic">Fall-Winter 2018/19 CHANEL Collection</h1>
-      <p class="lead my-3">For the Fall-Winter 2018/19 pre-collection, Karl Lagerfeld imagined
 
-pared-back monochromatic looks with hints of color.</p>
-      <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
+
+  <!-- the hero -->
+  <section class="p-3 p-md-5 rounded mb-4 d-none d-md-block" style="position: relative;overflow:hidden; height: 600px;">
+      <div class="video-container">
+          <video class="bg-video" autoplay muted loop>
+        <source src="/video/hero.mp4" type="video/mp4">
+        Your browser is not supported
+          </video>
+       </div>
+      <div class="">
+
+          <div class="center text-center">
+                <h3 class="text-white text-uppercase latoS" style="letter-spacing: 1px;">CHANEL'S FASHION COLLECTION</h3>
+                <h4 class="text-white text-uppercase raleway " style="letter-spacing: 1px;">IN BOUTIQUES</h4>
+                <p class="">For the Fall-Winter 2018/19 pre-collection, Karl Lagerfeld imagined<br>pared-back monochromatic looks with hints of color.</p>
+                  <a href="" class="btn btn-outline-dark">
+                      <h5 class="text-white text-uppercase latoS mb-0" style="letter-spacing: 1px;">READ THE POST</h5>
+                  </a>
+          </div>
+      </div>
+  </section>
+  <!-- end of the hero -->
+
+
+  <div class="card text-center d-sm-none mb-4" >
+    <img class="card-img-top" src="/img/bgirl.JPG" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title text-dark">CHANEL'S FASHION COLLECTION</h5>
+      <p class="card-text">For the Fall-Winter 2018/19 pre-collection, Karl Lagerfeld imagined<br>pared-back monochromatic looks with hints of color..</p>
+      <a href="#" class="text-dark" style="text-decoration: underline;">READ THE POST</a>
     </div>
   </div>
 
-  <div class="row mb-2">
-    <div class="col-md-6">
-      <div class="card flex-md-row mb-4 shadow-sm h-md-250">
-        <div class="card-body d-flex flex-column align-items-start">
-          <strong class="d-inline-block mb-2 text-primary">World</strong>
-          <h3 class="mb-0">
-            <a class="text-dark" href="#">Featured post</a>
-          </h3>
-          <div class="mb-1 text-muted">Nov 12</div>
-          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          <a href="#">Continue reading</a>
-        </div>
-        <img class="card-img-right flex-auto d-none d-lg-block" data-src="holder.js/200x250?theme=thumb" alt="Card image cap">
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="card flex-md-row mb-4 shadow-sm h-md-250">
-        <div class="card-body d-flex flex-column align-items-start">
-          <strong class="d-inline-block mb-2 text-success">Design</strong>
-          <h3 class="mb-0">
-            <a class="text-dark" href="#">Post title</a>
-          </h3>
-          <div class="mb-1 text-muted">Nov 11</div>
-          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          <a href="#">Continue reading</a>
-        </div>
-        <img class="card-img-right flex-auto d-none d-lg-block" data-src="holder.js/200x250?theme=thumb" alt="Card image cap">
-      </div>
-    </div>
+  <div>
+    <h4 class=" d-sm-none text-center mb-4 text-dark">&#x2619;THE LATEST POSTS&#x2619;</h4>
   </div>
+
 </div>

@@ -8,7 +8,7 @@ body {
     /*padding-top: 70px;*/
     color: #777;
     margin-bottom: 60px;
-    background: #fcfcfc  url("../img/body-bg.png");
+    /* background: #fcfcfc  url("../img/body-bg.png"); */
 }
 
 a {
@@ -24,6 +24,12 @@ a:hover {
 .navbar-nav li a {
     padding: 25px;
 }*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
 
 .navbar-brand {
     text-transform: uppercase;
@@ -354,4 +360,44 @@ ul.social-icons li {
 
 span.required {
     color: red;
+}
+
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+.bg-video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cat-name:hover {
+    text-decoration: underline;
+    /* transition: 3s; */
+}
+
+.page-link {
+    color: black;
+}
+
+
+.page-link:hover {
+    color: white;
+    background-color: #485460;
 }

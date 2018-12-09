@@ -60,7 +60,7 @@
         <nav class="nav d-flex justify-content-between">
         @foreach ($categories as $category)
             @if($category->id != 1)
-            <a href="{{ route('category', $category->slug) }}" class="p-2 text-muted">{{ $category->title }}</a>
+            <a href="{{ route('category', $category->slug) }}" class="p-2 text-dark cat-name">{{ $category->title }}</a>
             @endif
         @endforeach
         </nav>
