@@ -8,7 +8,7 @@
       <!-- Content Header (Page header) -->
       <section class="content-header">
         <h1>
-          Dasbhboard
+          Dashboard
         </h1>
         <ol class="breadcrumb">
           <li class="active"><i class="fa fa-dashboard"></i> Dashboard</li>
@@ -22,11 +22,9 @@
               <div class="box">
                 <!-- /.box-header -->
                 <div class="box-body ">
-                      <h3>OLAMODA ADMIN PORTAL!</h3>
-                      <p class="lead text-muted">Hallo {{ Auth::user()->name }}, Welcome to MyBlog</p>
 
-                      <h4>Get started</h4>
-                      <p><a href="{{ route('backend.blog.create') }}" class="btn btn-primary">Write your first blog post</a> </p>
+                      <h3>Hello {{ Auth::user()->name }}</h3>
+                      <p><a href="{{ route('backend.blog.create') }}" class="btn btn-primary">Write your blog post</a> </p>
                 </div>
                 <!-- /.box-body -->
               </div>

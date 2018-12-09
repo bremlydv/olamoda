@@ -2,9 +2,9 @@
 
 @section('content')
 
-<div class="login-box">
+<div class="login-box" style="">
   <div class="login-logo">
-    <a href="/"><b>My</b>BLOG</a>
+    <a href="/"><b>OLA</b>MODA</a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
@@ -42,7 +42,7 @@
         </div>
         <!-- /.col -->
         <div class="col-xs-4">
-          <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+          <button type="submit" class="btn btn-dark btn-block btn-flat">Sign In</button>
         </div>
         <!-- /.col -->
       </div>

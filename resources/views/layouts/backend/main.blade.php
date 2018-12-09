@@ -19,8 +19,9 @@
   <link rel="stylesheet" href="/backend/css/skins/_all-skins.min.css">
   <link rel="stylesheet" href="/backend/plugins/simplemde/simplemde.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css">  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css">
   <link rel="stylesheet" href="/backend/css/custom.css">
+  <link rel="stylesheet" href="/backend/css/new.css">
   @yield('style')
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -30,21 +31,20 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 </head>
-<body class="hold-transition skin-blue sidebar-mini">
+<body class="hold-transition sidebar-mini">
 <div class="wrapper">
 
     @include('layouts.backend.navbar')
 
     @include('layouts.backend.sidebar')
 
-
     @yield('content')
 
   <footer class="main-footer">
     <div class="pull-right hidden-xs">
-      <b>Version</b> 2.3.6
+      <b>Version</b> 1.0.0
     </div>
-    <strong>Copyright &copy; 2014-2016 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights
+    <strong>Copyright &copy; 2018 <a href="">OLAMODA</a>.</strong> All rights
     reserved.
   </footer>
 

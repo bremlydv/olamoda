@@ -40,7 +40,7 @@ class User extends Authenticatable
     public function gravatar()
     {
         $email = $this->email;
-        $default = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/User_icon-cp.svg/200px-User_icon-cp.svg.png";
+        $default = "identicon";
         $size = 100;
 
         return "https://www.gravatar.com/avatar/" . md5( strtolower( trim( $email ) ) ) . "?d=" . urlencode( $default ) . "&s=" . $size;

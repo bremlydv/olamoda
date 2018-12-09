@@ -53,7 +53,7 @@
                     </div>
                 </article>
 
-                @include('blog.comments')
+                @include('blog.disqus')
             </div>
 
             @include('layouts.sidebar')
