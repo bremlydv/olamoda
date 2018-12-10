@@ -2,7 +2,7 @@
 
 @section('content')
 
-    @if(!(isset($_GET['month']) || isset($_GET['term'])) && isset($displayHeroes))
+    @if(!(isset($_GET['month']) || isset($_GET['term']) || isset($_GET['page']) ) && isset($displayHeroes))
         @include('blog.showHeroes')
     @endif
 
