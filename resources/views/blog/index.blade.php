@@ -2,10 +2,9 @@
 
 @section('content')
 
-    @if(isset($displayHeroes) && (!isset($_GET['month']) || !isset($_GET['term'])))
+    @if(!(isset($_GET['month']) || isset($_GET['term'])) && isset($displayHeroes))
         @include('blog.showHeroes')
     @endif
-
 
     <div class="container">
         <div class="row">
