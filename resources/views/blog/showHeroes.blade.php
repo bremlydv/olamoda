@@ -16,7 +16,7 @@
                 <h3 class="text-white text-uppercase latoS" style="letter-spacing: 1px;">CHANEL'S FASHION COLLECTION</h3>
                 <h4 class="text-white text-uppercase raleway " style="letter-spacing: 1px;">IN BOUTIQUES</h4>
                 <p class="">For the Fall-Winter 2018/19 pre-collection, Karl Lagerfeld imagined<br>pared-back monochromatic looks with hints of color.</p>
-                  <a href="" class="btn btn-outline-dark">
+                  <a href="{{ route('blog.show', 'chanel-s-fall-winter-2018-19-pre-collection') }}" class="btn btn-outline-dark">
                       <h5 class="text-white text-uppercase latoS mb-0" style="letter-spacing: 1px;">READ THE POST</h5>
                   </a>
           </div>
