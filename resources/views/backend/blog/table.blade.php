@@ -5,7 +5,7 @@
             <td>Title</td>
             <td width="120">Author</td>
             <td width="150">Category</td>
-            <td width="170">Date</td>
+            <td width="170">Created Date</td>
         </tr>
     </thead>
     <tbody>

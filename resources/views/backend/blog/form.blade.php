@@ -58,11 +58,9 @@
             </div>
         </div>
         <div class="box-footer clearfix">
-            <div class="pull-left">
-                <a id="draft-btn" class="btn btn-default">Save Draft</a>
-            </div>
-            <div class="pull-right">
-                {!! Form::submit('Publish', ['class' => 'btn btn-primary']) !!}
+
+            <div class="">
+                {!! Form::submit('Publish', ['class' => 'btn btn-block']) !!}
             </div>
         </div>
     </div>
