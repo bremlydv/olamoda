@@ -23,7 +23,8 @@
 @endif
 
 @if(isset($_GET['month']))
-  <div>
-    <h4 class="text-center mb-4 text-dark">&#x2619; ARCHIVE POSTS &#x2619;</h4>
+  <div class="alert alert-secondary">
+    <h4 class="text-center text-dark">&#x2619; ARCHIVE POSTS &#x2619;</h4>
+    <h6 class="text-center mb-0">{{  strtoupper(month_name($_GET['month'])) . " " . $_GET['year'] }}</h6>
   </div>
 @endif
